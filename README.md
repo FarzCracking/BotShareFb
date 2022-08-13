@@ -1,3 +1,4 @@
+```
 pkg install update && pkg install upgrade
 pkg install git python
 pip install requests bs4
