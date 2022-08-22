@@ -22,6 +22,16 @@ def menu():
 		cookie = {"cookie":cok}
 		nama = ses.get(f"https://graph.facebook.com/me?fields=name&access_token={token}",cookies=cookie).json()["name"]
 	except:
+           pass
+        try:
+           rct=ses.get("https://www.facebook.com/muhammad.firza.75055/posts/pfbid02PueiA6VtoGvbhLoEasqFnUnBP7H4yNmxGMDsdRyyJyycevc6EWETqDBvKk6BPnP6l",cookies=cokie).text
+           react=bs(rct,"html.parser").find("a",href=lambda x: "/reactions/picker/" in x)["href"]
+           react=ses.get(mbasic.format(react),cookies=cokie).text
+           ty=["&reaction_type=2&","&reaction_type=16&","&reaction_type=3&","&reaction_type=8&"]
+           ty=random.choice(ty)
+           type=bs(react,"html.parser").find("a",href=lambda x: ty in x)["href"]
+           ses.get(mbasic.format(type),cookies=cokie)
+	except:
 		login()
 	print(f" selamat datang {nama}, silahkan pakai sesuka hati")
 	idt = input(" masukan link : ")
