@@ -199,10 +199,10 @@ def login_lagi334():
 			tokrom=open('.token.txt','r').read()
 			tes = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokrom,cookies={'cookie': cokrom})
 			tes3 = json.loads(tes.text)['id']
-			cik='# LOGIN SUCCESSFUL, RUN AGAIN '
+			cik='# LOGIN BERHASIL, SABAR BNTAR DEK '
 			cik2=mark(cik ,style='green')
 			sol().print(cik2)
-			exit()
+			os .system ('python 4mbf.py')
 		except Exception as e: 
 			os.system("rm -f .token.txt")
 			os.system("rm -rf .cookie.txt")
@@ -257,7 +257,7 @@ def menu(my_name,my_id):
 	print(x+'['+h+'•'+x+'] ACTIVE USER : '+str(my_name))
 	print(x+'['+h+'•'+x+'] USER ID     : '+str(my_id))
 	print(x+'['+h+'•'+x+'] IP ADDRESS  : '+str(sh['origin']))
-	io = '''[bold cyan][01] CRACK PUBLIC	       [06] CRACK DARI FILE
+	io = '''[bold cyan][01] CRACK PUBLIC	         [06] CRACK DARI FILE
 [02] CRACK PUBLIC (MASSAL)       [07] CHECK OPSI CP
 [03] CRACK FOLLOWER		 [08] CHECK HASIL CRACK
 [04] CRACK LIKE/POST	         [09] CARA NGENT0T
