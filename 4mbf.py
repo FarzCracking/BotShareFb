@@ -258,9 +258,10 @@ def menu(my_name,my_id):
 	print(x+'['+h+'•'+x+'] USER ID     : '+str(my_id))
 	print(x+'['+h+'•'+x+'] IP ADDRESS  : '+str(sh['origin']))
 	io = '''[bold cyan][01] CRACK PUBLIC	  [05] CHECK CRACK RESULTS
-[02] CRACK MASSAL                                 [00] LOGOUT[bold cyan]'''
+[02] CRACK MASSAL                       
 [03] CRACK FROM FILES	     
-[04] CHECK CHECKPOINT OPTIONS	     
+[04] CHECK CHECKPOINT OPTIONS
+[00] LOGOUT[bold cyan]'''
            [00] LOGOUT[bold cyan]'''
 	oi = nel(io, style='cyan')
 	cetak(nel(oi, title='[bold cyan] • MENU CRACK • [/bold cyan]'))
