@@ -520,14 +520,14 @@ def dump_publik():
 def dump_massal():
 	mas='[01] CRACK MANUAL'
 	mas2=nel(mas,style='cyan')
-	cetak(nel(mas2,title=' • BULK MENU •'))
-	pilih=input('[•] Choose : ')
-	if pilih in ['1','01']:
+	cetak(nel(mas2,title=' • MENU CRACK MASSAL •'))
+	pilih=input('[•] PILIH: ')
+	if pilih in ['1','02']:
 		nmfil=input('[•] File Name : ')
 		nmfile=open(nmfil,'r').read().splitlines()
 		for xfil in nmfile:
 			uid.append(xfil)
-	elif pilih in ['2','02']:
+	elif pilih in ['1','01']:
 		print(x+'['+h+'•'+x+'] MASUKKAN ID TARGET LIMIT ID [20]')
 		try:
 			jum = int(input(x+'['+p+'f'+x+'] Mau Berapa Target Cui : '))
@@ -777,7 +777,7 @@ def tipsx():
 
 # PENGATURAN ID
 def setting():
-	wl = '# ID SEQUENCE SETTINGS'
+	wl = '# SETTING MAU MANA'
 	sol().print(mark(wl, style='green'))
 	teks = '[01] CRACK DARI AKUN TERTUA\n[02] CRACK DARI AKUN TERNEW\n[03] CRACK RANDOM'
 	tak = nel(teks, style='cyan')
@@ -804,7 +804,7 @@ def setting():
 		ric = '# OPTION NOT IN THE MENU'
 		sol().print(mark(ric, style='red'))
 		exit()
-	met = '# CHOOSE CRACK METHOD'
+	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='green'))
 	ioz = '[01] METHOD M-FACEBOOK\n[02] METHOD FREE-FACEBOOK\n[03] METHOD TOUCH-FACEBOOK\n[04] METHOD MBASIC-FACEBOOK'
 	gess = nel(ioz, style='cyan')
@@ -822,14 +822,14 @@ def setting():
 		method.append('mobile')
 	guw = '# TAMPILKAN APK TERKAIT ? (y/t)'
 	sol().print(mark(guw, style='cyan'))
-	aplik = input(x+'['+p+'f'+x+'] Choose : ')
+	aplik = input(x+'['+p+'f'+x+'] PILIH : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
 	guw = '# TAMPILKAN OPSI CP ? (y/t)'
 	sol().print(mark(guw, style='cyan'))
-	osk = input(x+'['+p+'f'+x+'] Choose : ')
+	osk = input(x+'['+p+'f'+x+'] PILIH : ')
 	if osk in ['y','Y']:
 		oprek.append('ya')
 	else:
@@ -837,7 +837,7 @@ def setting():
 
 	guw = '# TAMPILKAN RESULT CP ? (y/t)'
 	sol().print(mark(guw, style='cyan'))
-	cpres = input(x+'['+p+'f'+x+'] Choose : ')
+	cpres = input(x+'['+p+'f'+x+'] PILIH : ')
 	if cpres in ['y','Y']:
 		princp.append('ya')
 	else:
