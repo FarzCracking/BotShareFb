@@ -543,7 +543,7 @@ def dump_massal():
 			exit()
 		ses=requests.Session()
 		yz = 0
-		print(x+'['+h+'•'+x+'] TYPE "me" IF YOU WANT TO DUMP FROM YOUR FRIENDS')
+		print(x+'['+h+'•'+x+'] Ketik ( me ) Jika Ingin Crack Follower Sendiri')
 		for met in range(jum):
 			yz+=1
 			kl = input(x+'['+h+str(yz)+x+'] Masukkan ID Yang '+str(yz)+' Ke : ')
