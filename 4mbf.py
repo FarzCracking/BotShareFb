@@ -860,7 +860,7 @@ def setting():
 def passwrd():
 	ler = '# PROSES CRACK, KETIK CTRL+Z JIKA INGIN BERHENTI'
 	sol().print(mark(ler, style='green'))
-	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/FARZ-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/FARZ-DATA/CP/%s\nON/OF MODEPESAWAT SETIAP 500 ID'%(okc,cpc)
+	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/FARZ-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/FARZ-DATA/CP/%s\n                        ON/OF MODEPESAWAT SETIAP 500 ID'%(okc,cpc)
 	cetak(nel(krek, title=' • CRACK • '))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
