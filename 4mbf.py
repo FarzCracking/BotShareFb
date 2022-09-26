@@ -522,7 +522,7 @@ def dump_massal():
 	mas2=nel(mas,style='cyan')
 	cetak(nel(mas2,title=' • MENU CRACK MASSAL •'))
 	pilih=input('[•] PILIH: ')
-	if pilih in ['1','02']:
+	if pilih in ['2','02']:
 		nmfil=input('[•] File Name : ')
 		nmfile=open(nmfil,'r').read().splitlines()
 		for xfil in nmfile:
