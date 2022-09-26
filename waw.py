@@ -1194,7 +1194,12 @@ def crack(idf,pwv,nmf):
 	pers = loop*100/len(id2)
 	fff = '%'
 	sys.stdout.write('\r└\x1b[1;90m[%s\x1b[1;93mIKFAR-IFC\x1b[1;90m]-[\x1b[1;91m%s\x1b[1;90m/\33[m%s\x1b[1;90m]-[\x1b[1;92mOK:%s\x1b[1;90m]-[\33[93mCP:%s\x1b[93m]-[\x1b[1;94m%s%s\x1b[1;90m]%s ✓'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
-	ua = random.choice(ugen)
+	ua = random.choice(['Mozilla/5.0 (Linux; Android 10; Redmi 6 Build/PPR1.126861.011; en-us) AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/79.0.5331.136 Mobile Safari/537.36 Puffin/9.7.2.87492AP','Mozilla/5.0 (Linux; Android 10; Redmi 4 Build/PPR1.154417.011; en-us) AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/79.0.3259.136 Mobile Safari/537.36 Puffin/9.7.2.31589AP',
+'Mozilla/5.0 (Linux; Android 8.1.0; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 6.0.1; Redmi 3S Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 Instagram 244.1.0.19.110 Android (22/5.1.1; 320dpi; 720x1280; OPPO; A37f; A37f; qcom; en_GB; 384108438)','Mozilla/5.0 (Linux; Android 8.1.0; Redmi 5 Plus Build/OPM1.171019.019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36',
+'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7230E/S723EXXJJ1; U; Bada/1.0; fr-fr) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B','Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5250/S525WXEKE1; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B',
+'Mozilla/5.0 (Linux; Android 8.1.0; Redmi Y2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36'])
 	ua = random.choice(ugen2)
 	ses = requests.Session()
 	for pw in pwv:
