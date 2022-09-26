@@ -143,13 +143,14 @@ def banner():
 	sol().print(cik2)
 	ban='''
 •   AUTHOR  : FARZ-XD WHATSAPP : 083899216451       •
+
 •  ███████╗ █████╗ ██████╗ ███████╗██╗  ██╗██████╗  •
 •  ██╔════╝██╔══██╗██╔══██╗╚══███╔╝╚██╗██╔╝██╔══██╗ •
 •  █████╗  ███████║██████╔╝  ███╔╝  ╚███╔╝ ██║  ██║ •
 •  ██╔══╝  ██╔══██║██╔══██╗ ███╔╝   ██╔██╗ ██║  ██║ •
 •  ██║     ██║  ██║██║  ██║███████╗██╔╝ ██╗██████╔╝ •
 •  ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  •                                                
-•    GITHUB : HTTPS://GITHUB.COM/AOREC-XD/4MBF      •'''
+•    GITHUB : HTTPS://GITHUB.COM/IKFAR-IFC      •'''
 	oi = nel(tekz(ban,justify='center',style='bold'), style='cyan')
 	cetak(nel(oi, title='[bold cyan] • DEVELOVER INFORMATION • [/bold cyan]'))
 # VALIDASI TOKEN
