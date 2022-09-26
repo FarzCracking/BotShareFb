@@ -550,10 +550,9 @@ def dump_massal():
 			uid.append(kl)
 	sed='# SEDANG MENARIK KELAMIN TARGET SABAR'
 	sol().print(mark(sed, style='green'))
-	ses=requests.Session()
 	for userr in uid:
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': cokbrut[0]}).json()
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
