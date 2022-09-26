@@ -867,7 +867,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['bagong','sayang','kontol','bangsat]
+			pwv = ['bagong','sayang','kontol','bangsat']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
